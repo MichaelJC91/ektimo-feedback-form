@@ -10,13 +10,10 @@ app.set("view engine", "ejs");
 //Set directory of Style Sheet
 app.use(express.static(__dirname + "/public"));
 
-// seedDB();
 //Mongoose Directory
 mongoose.connect("mongodb://localhost/ektimo_feedback_form");
 
-
 app.use(bodyParser.urlencoded({extended: true}));
-app.use(expressSanitizer());
 
 //Get Feedback Form
 app.get("/feedback", function(req, res){
