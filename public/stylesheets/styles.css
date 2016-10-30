@@ -1,0 +1,105 @@
+body {
+    background: #eee;
+}
+
+        /*Header Image*/
+.headerImg {
+    background-image: url("/assets/imgs/Earth 2.jpg");
+    height: 311px;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+        /*************/
+
+        /*Feedback Form*/
+.feedbackFormContainer {
+    margin-top: -100px;
+    margin-bottom: 50px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
+    border-top: 8px solid rgb(25, 101, 153);
+}
+
+.feedbackForm {
+    width: 800px;
+    margin: 0 auto;
+    max-width: 90%;
+}
+
+.ratingContainer {
+    width: 657px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    max-width: 100%;
+}
+
+.ratingRadioButton {
+    position: relative;
+    display: inline-block;
+    padding-left: 25px;
+    margin-bottom: 0;
+    font-weight: 400;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.ratingRadioButton:first-of-type {
+    padding-left: 0;
+}
+
+.ratingRadioButton input[type=radio] {
+    position: absolute;
+    margin-left: 0;
+    width: 20px;
+    height: 20px;
+}
+
+.ratingNumber {
+    margin-left: 4px;
+}
+
+.ratingNumberLast {
+    margin-left: 0;
+}
+
+.ratingTitle {
+    display: inline-block;
+    position: relative;
+    top: 30px;
+    padding-left: 25px;
+}
+
+.ratingTitle:first-of-type {
+    padding-left: 0;
+    padding-right: 25px;
+}
+
+.legendText {
+    font-size: 15px;
+    font-weight: 700;
+    /*padding-top: 35px;*/
+}
+
+.legendText span {
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.form-group {
+    margin-bottom: 40px;
+}
+
+.form-group:first-child {
+    margin-top: 30px;
+}
+
+        /*************/
+
+
+    /*Margin CSS*/
+    
+.marginTop30 {
+    margin-top: 30px;
+}
+   /*End Margin CSS*/
