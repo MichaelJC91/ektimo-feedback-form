@@ -7,15 +7,13 @@ var express = require("express"),
 //Routes
 var indexRoute = require("./routes/index");
 
-
-
 //Set View Engine Template
 app.set("view engine", "ejs");
 
 //Set directory of Style Sheet
 app.use(express.static(__dirname + "/public"));
 
-//Mongoose Directory
+//Mongoose Directory For Local Enviroment
 mongoose.connect(process.env.DATABASEURL);
 
 app.use(bodyParser.urlencoded({extended: true}));
