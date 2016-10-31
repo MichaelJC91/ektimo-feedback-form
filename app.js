@@ -2,7 +2,8 @@ var express = require("express"),
     app     = express(),
     bodyParser = require("body-parser"),
     mongoose    = require("mongoose"),
-    Feedback    = require("./models/feedback");
+    Feedback    = require("./models/feedback"),
+    moment      = require("moment");
 
 //Set View Engine Template
 app.set("view engine", "ejs");
@@ -15,6 +16,10 @@ app.use(express.static(__dirname + "/public"));
 mongoose.connect("mongodb://michael:comics1991@ds139277.mlab.com:39277/ektimo_feedback_form");
 
 app.use(bodyParser.urlencoded({extended: true}));
+
+//Use moment.js library across all files
+app.locals.moment = moment;
+
 
 //Get Feedback Form
 app.get("/", function(req, res){
