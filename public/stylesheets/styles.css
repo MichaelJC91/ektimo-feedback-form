@@ -1,7 +1,11 @@
-body {
+        /*Main Container*/
+        
+.main {
     background: #eee;
 }
-
+        
+        /***************/
+        
         /*Header Image*/
 .headerImg {
     background-image: url("/assets/imgs/Earth 2.jpg");

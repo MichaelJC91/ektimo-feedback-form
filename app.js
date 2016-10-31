@@ -5,7 +5,9 @@ var express = require("express"),
     moment      = require("moment-timezone");
     
 //Routes
-var indexRoute = require("./routes/index")
+var indexRoute = require("./routes/index");
+
+
 
 //Set View Engine Template
 app.set("view engine", "ejs");

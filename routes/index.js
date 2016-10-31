@@ -9,6 +9,11 @@ router.get("/", function(req, res){
     res.render("feedback");
 });
 
+//Thank You Page
+router.get("/thank-you", function(req, res){
+    res.render("thank-you");
+});
+
 //Create New Feedback
 router.post("/", function(req, res){
     //Get data from form and add to campgrounds array
@@ -37,7 +42,7 @@ router.post("/", function(req, res){
         if(err) {
             console.log(err);
         }   else {
-            res.redirect("http://ektimo.com.au/home/");
+            res.redirect("thank-you");
         }
     });
 });
