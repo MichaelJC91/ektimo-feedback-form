@@ -11,7 +11,8 @@ app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
 
 //Mongoose Directory
-mongoose.connect("mongodb://localhost/ektimo_feedback_form");
+// mongoose.connect("mongodb://localhost/ektimo_feedback_form");
+mongoose.connect("mongodb://michael:comics1991@ds139277.mlab.com:39277/ektimo_feedback_form");
 
 app.use(bodyParser.urlencoded({extended: true}));
 
