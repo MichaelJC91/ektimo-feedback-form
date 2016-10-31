@@ -8,7 +8,7 @@ var feedbackSchema = new mongoose.Schema({
     reason: String,
     postToWebsite: String,
     websiteAppear: String,
-    date: {type: Date, required: true, default: Date.now}
+    date: {type: String, required: true}
 });
 
 module.exports = mongoose.model("Feedback", feedbackSchema);

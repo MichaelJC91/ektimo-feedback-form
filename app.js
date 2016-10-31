@@ -3,7 +3,9 @@ var express = require("express"),
     bodyParser = require("body-parser"),
     mongoose    = require("mongoose"),
     Feedback    = require("./models/feedback"),
-    moment      = require("moment");
+    moment      = require("moment-timezone"),
+    date        = moment().tz("Australia/Melbourne").format("Do MMM, YYYY");
+    
 
 //Set View Engine Template
 app.set("view engine", "ejs");
@@ -35,7 +37,6 @@ app.post("/", function(req, res){
         reason      = req.body.reason,
         post        = req.body.postToWebsite,
         chooseName  = req.body.chooseName;
-        
     //Create new feedback form with above variables ^^
     var newFeedbackForm = {
         
@@ -44,7 +45,8 @@ app.post("/", function(req, res){
         name: name,
         reason: reason,
         postToWebsite: post,
-        websiteAppear: chooseName
+        websiteAppear: chooseName,
+        date: date
         
     };
     
