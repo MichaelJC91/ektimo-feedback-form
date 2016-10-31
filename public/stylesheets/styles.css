@@ -24,6 +24,10 @@ body {
     background: #eee;
     padding-bottom: 50px;
 }
+
+.container-fluid {
+    padding: 0;
+}
         
         /***************/
         
