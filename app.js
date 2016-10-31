@@ -17,12 +17,12 @@ mongoose.connect("mongodb://michael:comics1991@ds139277.mlab.com:39277/ektimo_fe
 app.use(bodyParser.urlencoded({extended: true}));
 
 //Get Feedback Form
-app.get("/feedback", function(req, res){
+app.get("/", function(req, res){
     res.render("feedback");
 });
 
 //Create New Feedback
-app.post("/feedback", function(req, res){
+app.post("/", function(req, res){
     //Get data from form and add to campgrounds array
     var companyName = req.body.companyName,
         rating      = req.body.rating,
