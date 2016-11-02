@@ -4,17 +4,6 @@ html, body {
     font-family: "Myriad pro Semibold"
 }
 
-
-        /*Responsive CSS*/
-        
-@media(max-width: 700px) {
-    .thankYouLogo {
-        
-    }
-}        
-        
-        /****************/
-
         
         /*Main Container*/
         
@@ -41,6 +30,17 @@ html, body {
     -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     border-top: 8px solid rgb(25, 101, 153);
+}
+
+.feedbackRequired {
+    color: red;
+    margin-bottom: 25px
+}
+
+.feedbackStar {
+    color: red;
+    font-size: 15px;
+    margin-left: 3px;
 }
 
 .feedbackForm {
