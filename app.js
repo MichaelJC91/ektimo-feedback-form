@@ -25,5 +25,6 @@ app.locals.moment = moment;
 app.use(indexRoute);
 
 app.listen(process.env.PORT, process.env.IP, function(){
+    console.log(process.env.DATABASEURL);
     console.log("App Has Started!");
 });
