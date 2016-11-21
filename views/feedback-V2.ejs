@@ -1,0 +1,147 @@
+<% include ./partials/header %>
+
+<div class="main">
+    <div class="container-fluid headerImg"></div>
+    <div class="container feedbackFormContainer">
+        <div class="row">
+            <div class="col-md-12 col-xs-12">
+                <div class="text-center">
+                    <h1>Ektimo Client Feedback Form</h1>
+                    <h5>Ektimo value your feedback and we would appreciate it if you took a few minutes to fill out this form (It should take less than 2 minutes)</h5>
+                </div>
+            </div>
+        <div class="col-md-12 col-xs-12">
+        <form class="feedbackForm" action="/" method="POST">
+            <strong><h5 class="feedbackRequired">*Required</h5></strong>
+            <div class="form-group">
+                <label for="companyName">Company Name<span class="feedbackStar">*</span></label>
+                <input type="text" class="form-control" name="companyName" id="companyName" placeholder="Ektimo" required>
+            </div>
+            <fieldset class="form-group">
+                <legend class="legendText">Out of 10, how would you rate your experience with Ektimo on this project?<span class="feedbackStar">*</span><br><span>(With 1 meaning you were unhappy and 10 meaning you were very appreciative)</span></legend>
+                <div class="ratingContainer">
+                    <div class="ratingText"><span>Unhappy</span></div>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">1</div>
+                    <div class="radioButton ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating1" value="1" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">2</div>
+                    <div class="radioButton ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating2" value="2" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">3</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating3" value="3" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">4</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating4" value="4" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">5</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating5" value="5" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">6</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating6" value="6" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">7</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating7" value="7" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">8</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating8" value="8" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">9</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating9" value="9" required>
+                    </div>
+                  </label>
+                  <label class="ratingLabel">
+                    <div class="ratingNumber">10</div>
+                    <div class="ratingNumber ratingRadioButton">
+                      <input type="radio" class="form-check-input" name="rating" id="rating10" value="10" required>
+                    </div>
+                  </label>
+                <div class="ratingText text-center"><span>Very<br>
+                Appreciative</span></div>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <label for="name">Your Name<span class="feedbackStar">*</span></label>
+                <input type="text" class="form-control" name="name" id="name" placeholder="Michael Carniato" required>
+            </div>
+            <div class="form-group">
+                <label for="reason">Could you give a brief reason for this rating?<span class="feedbackStar">*</span></label>
+                <h5>(We appreciate your honest feedback)</h5>
+                <input type="text" class="form-control" name="reason" id="reason" placeholder="Fast And Reliable Service!" required>
+            </div>
+            <fieldset class="form-group">
+                <h4>Are you happy to post this feedback to our website?<span class="feedbackStar">*</span></h4>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="postToWebsite" id="postToWebsiteYes" value="Yes" required>
+                        Yes
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="postToWebsite" id="postToWebsiteNo" value="No">
+                        No
+                    </label>
+                </div>
+            </fieldset>
+            <fieldset class="form-group">
+                <h4>Please select your preferred option to appear on our website.<span class="feedbackStar">*</span></h4>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="chooseName" id="nameAndComanyTrue" value="Name And Company" required>
+                        My Name and Company Name Included
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="chooseName" id="nameOnly" value="Name Only">
+                        My Name Only Included
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="chooseName" id="companyNameOnly" value="Company Name Only">
+                        My Company Name Only Included
+                    </label>
+                </div>
+                <div class="form-check">
+                    <label class="form-check-label">
+                        <input type="radio" class="form-check-input" name="chooseName" id="anonymous" value="Anonymous">
+                        My Name and Company Name Removed (Anonymous)
+                    </label>
+                </div>
+            </fieldset>
+            <div class="form-group">
+                <button class="btn btn-lg btn-primary">Submit</button>
+            </div>
+        </form>
+        </div>
+    </div>
+</div>
+
+<% include ./partials/footer %>
