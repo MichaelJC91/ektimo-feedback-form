@@ -29,7 +29,6 @@ html, body {
 .feedbackFormContainer {
     margin-top: -100px;
     background-color: #fff;
-    -webkit-box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     border-top: 8px solid rgb(25, 101, 153);
 }
@@ -62,7 +61,6 @@ html, body {
   flex-direction: column;
   flex-grow: 1;
   text-align: center;
-  -webkit-box-orient: vertical;
 }
 
 .radioButton,
@@ -70,7 +68,6 @@ html, body {
   display: flex;
   align-items: center;
   justify-content: center;
-  -webkit-box-align: center;
   min-height: 3em;
 }
 
