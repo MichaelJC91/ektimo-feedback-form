@@ -2,13 +2,17 @@ var express = require("express"),
     app     = express(),
     bodyParser = require("body-parser"),
     mongoose    = require("mongoose"),
-    moment      = require("moment-timezone");
+    moment      = require("moment-timezone"),
+    minify      = require('express-minify');
     
 //Routes
 var indexRoute = require("./routes/index");
 
 //Set View Engine Template
 app.set("view engine", "ejs");
+
+//Express Minify
+app.use(minify());
 
 //Set directory of Style Sheet
 app.use(express.static(__dirname + "/public"));
