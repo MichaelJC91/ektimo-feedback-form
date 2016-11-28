@@ -5,13 +5,16 @@ var express = require("express"),
     moment      = require("moment-timezone"),
     minify      = require('express-minify'),
     autoprefixer = require('express-autoprefixer'),
-    root = '/public/stylesheets';
+    compression = require("compression");
     
 //Routes
 var indexRoute = require("./routes/index");
 
 //Set View Engine Template
 app.set("view engine", "ejs");
+
+//Compress all requests
+app.use(compression());
 
 //Express Minify
 app.use(minify());
