@@ -2,7 +2,8 @@ var express     = require("express"),
     router      = express.Router(),
     Feedback    = require("../models/feedback"),
     moment      = require("moment-timezone"),
-    date        = moment().tz("Australia/Melbourne").format("Do MMM, YYYY");
+    date        = moment().tz("Australia/Melbourne").format("Do MMM, YYYY"),
+    xmlify = require('xmlify');
     
 //Root Route (Feedback Form)
 router.get("/", function(req, res){
@@ -49,11 +50,13 @@ router.post("/", function(req, res){
 
 //Get Feedback JSON Data
 router.get("/feedback-data", function(req, res){
-    Feedback.find({}, function(err, foundFeedback){
+    Feedback.find(function(err, foundFeedback){
         if(err) {
             console.log(err);
         } else {
-            res.json({feedback: foundFeedback});
+            res.set('Content-Type', 'text/xml');
+            var obj = foundFeedback;
+            res.send(xmlify(obj, "feedback"));
         }
     });
 });
