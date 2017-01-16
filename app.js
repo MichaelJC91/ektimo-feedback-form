@@ -28,6 +28,7 @@ app.use(express.static(__dirname + "/public"));
 
 
 //Mongoose Directory For Local Enviroment
+//Set DATABASEURL variable to mongodb://localhost/ektimo_feedback_form
 mongoose.connect(process.env.DATABASEURL);
 
 app.use(bodyParser.urlencoded({extended: true}));
@@ -39,5 +40,6 @@ app.locals.moment = moment;
 app.use(indexRoute);
 
 app.listen(process.env.PORT, process.env.IP, function(){
+    console.log(process.env.DATABASEURL);
     console.log("App Has Started!");
 });

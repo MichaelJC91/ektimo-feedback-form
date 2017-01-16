@@ -2,7 +2,7 @@ var express     = require("express"),
     router      = express.Router(),
     Feedback    = require("../models/feedback"),
     moment      = require("moment-timezone"),
-    date        = moment().tz("Australia/Melbourne").format("Do MMM, YYYY"),
+    date        = moment().tz("Australia/Melbourne").format("DD/MM/YYYY HH:mm:ss"),
     xmlify = require('xmlify');
     
 //Root Route (Feedback Form)
