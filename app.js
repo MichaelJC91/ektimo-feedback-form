@@ -1,5 +1,6 @@
 var express = require("express"),
     app     = express(),
+    expressSanitizer = require('express-sanitizer'),
     bodyParser = require("body-parser"),
     mongoose    = require("mongoose"),
     moment      = require("moment-timezone"),
@@ -7,9 +8,12 @@ var express = require("express"),
     autoprefixer = require('express-autoprefixer'),
     compression = require("compression");
 
-    
+
 //Routes
 var indexRoute = require("./routes/index");
+
+//Express Sanitizer Middleware
+app.use(expressSanitizer());
 
 //Set View Engine Template
 app.set("view engine", "ejs");
@@ -40,6 +44,5 @@ app.locals.moment = moment;
 app.use(indexRoute);
 
 app.listen(process.env.PORT, process.env.IP, function(){
-    console.log(process.env.DATABASEURL);
     console.log("App Has Started!");
 });

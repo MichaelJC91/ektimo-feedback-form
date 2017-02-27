@@ -17,7 +17,7 @@
     "express": "^4.14.0",
     "express-autoprefixer": "^5.1.1",
     "express-minify": "^0.2.0",
-    "express-sanitizer": "^1.0.1",
+    "express-sanitizer": "^1.0.2",
     "express-session": "^1.14.1",
     "js2xmlparser": "^2.0.2",
     "method-override": "^2.3.6",

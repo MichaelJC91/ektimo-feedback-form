@@ -10,7 +10,7 @@
                     <h5>Ektimo value your feedback and we would appreciate it if you took a few minutes to fill out this form (It should take less than 2 minutes)</h5>
                 </div>
             </div>
-        <div class="col-md-12 col-xs-12">
+        <div class="col-md-12 col-xs-12 feedbackFormWrapper">
         <form class="feedbackForm" action="/" method="POST">
             <strong><h5 class="feedbackRequired">*Required</h5></strong>
             <div class="form-group">
@@ -95,21 +95,6 @@
                 <input type="text" class="form-control" name="reason" id="reason" placeholder="Fast And Reliable Service!" required>
             </div>
             <fieldset class="form-group">
-                <h4>Are you happy to post this feedback to our website?<span class="feedbackStar">*</span></h4>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="postToWebsite" id="postToWebsiteYes" value="Yes" required>
-                        Yes
-                    </label>
-                </div>
-                <div class="form-check">
-                    <label class="form-check-label">
-                        <input type="radio" class="form-check-input" name="postToWebsite" id="postToWebsiteNo" value="No">
-                        No
-                    </label>
-                </div>
-            </fieldset>
-            <fieldset class="form-group">
                 <h4>Please select your preferred option to appear on our website.<span class="feedbackStar">*</span></h4>
                 <div class="form-check">
                     <label class="form-check-label">
@@ -136,9 +121,67 @@
                     </label>
                 </div>
             </fieldset>
-            <div class="form-group">
-                <button class="btn btn-lg btn-primary">Submit</button>
-            </div>
+            <fieldset class="form-group">
+              <h4>Which of the following services are you aware of that Ektimo can perform?</h4>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="stackEmissionTesting" value="Stack Emission Testing"/>
+                  Stack Emission Testing
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="odourInvestigations" value="Odour Investigations"/>
+                  Odour Investigations
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="ambientMonitoring" value="Ambient Monitoring"/>
+                  Ambient Monitoring
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="consultingServices" value="Consulting Services"/>
+                  Consulting Services
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="laboratoryServices" value="Laboratory Services"/>
+                  Laboratory Services
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="workplaceTesting" value="Workplace Testing"/>
+                  Workplace Testing
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="supplyServicingEnviormentInstruments" value="Supply and servicing of Environmental Monitoring Instruments and Equipment"/>
+                  Supply and servicing of Environmental Monitoring Instruments and Equipment
+                </label>
+              </div>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceCheckbox" id="supplyServicingLabEquipment" value="Supply and servicing of Laboratory Equipment"/>
+                  Supply and servicing of Laboratory Equipment
+                </label>
+              </div>
+            </fieldset>
+            <fieldset class="form-group">
+              <h4>Would you like to be contacted to find out more about any of these services?</h4>
+              <div class="form-check">
+                <label>
+                  <input type="checkbox" name ="serviceContact" id="serviceContact" value="Yes, please contact me"/>
+                  Yes, please contact me
+                </label>
+              </div>
+            </fieldset>
+            <button class="btn btn-lg btn-primary">Submit</button>
         </form>
         </div>
     </div>

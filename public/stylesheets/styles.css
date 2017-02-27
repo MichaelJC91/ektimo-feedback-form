@@ -6,16 +6,16 @@ html, body {
     /*font-family: "Myriad pro Semibold"*/
 }
 
-        
+
         /*Main Container*/
-        
+
 .main {
     background: #eee;
     padding-bottom: 50px;
 }
-        
+
         /***************/
-        
+
         /*Header Image*/
 .headerImg {
     background-image: url("/assets/imgs/Earth 2.jpg");
@@ -31,6 +31,10 @@ html, body {
     background-color: #fff;
     box-shadow: 0 1px 4px 0 rgba(0,0,0,0.37);
     border-top: 8px solid rgb(25, 101, 153);
+}
+
+.feedbackFormWrapper {
+  padding-bottom: 30px;
 }
 
 .feedbackRequired {
@@ -128,14 +132,14 @@ html, body {
 
 
     /*Margin CSS*/
-    
+
 .marginTop30 {
     margin-top: 30px;
 }
    /*End Margin CSS*/
-   
+
    /*Thank You Page*/
-   
+
 .thankYouBody {
     background-image: url("/assets/imgs/Earth 2.jpg");
     background-size: cover;
@@ -158,9 +162,9 @@ html, body {
 .thankYouText {
     color: #ffffff;
     font-size: 1em;
-    text-shadow: 0px 4px 3px rgba(0,0,0,0.4), 
-                 0px 8px 13px rgba(0,0,0,0.1), 
+    text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+                 0px 8px 13px rgba(0,0,0,0.1),
                  0px 18px 23px rgba(0,0,0,0.1);
 }
-   
+
    /****************/

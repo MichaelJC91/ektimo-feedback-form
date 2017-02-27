@@ -6,8 +6,9 @@ var feedbackSchema = new mongoose.Schema({
     rating: Number,
     name: String,
     reason: String,
-    postToWebsite: String,
     websiteAppear: String,
+    services: Array,
+    servicesContact: { type: String, default: "No, please don't contact me" },
     date: {type: String, required: true}
 });
 
